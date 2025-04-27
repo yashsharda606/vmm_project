@@ -1,0 +1,23 @@
+vmm_project/
+├── src/
+│   ├── main.cpp          # Main program logic, input parsing, and simulation
+│   ├── pager.h           # Header file for Pager base class and derived classes
+│   ├── pager.cpp         # Implementation of Pager classes (page replacement algorithms)
+│   └── types.h           # Common data structures and constants
+├── inputs/
+│   ├── in1               # Provided input files (in1 to in11)
+│   ├── in2
+│   ├── ...
+│   ├── in11
+│   └── rfile             # Random number file for Random algorithm
+├── outputs/              # Directory for your program’s output files
+│   └── (empty initially)
+├── scripts/
+│   ├── runit.sh         # Script to run your program with different inputs
+│   └── gradeit.sh       # Script to compare your outputs with reference outputs
+├── refout/              # Directory for reference outputs (provided by instructor)
+│   └── (reference output files)
+├── makefile             # Makefile to compile the program
+├── make.log             # Log file from running `make`
+└── grade.log            # Log file from running `gradeit.sh`
+└── debug.out            # Debugging file

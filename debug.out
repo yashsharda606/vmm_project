@@ -1,0 +1,92 @@
+DEBUG: Initialized 16 frames, input file inputs/in2.in
+DEBUG: Cost after context switch (c 0) = 130
+DEBUG: Context switch to proc 0, ctx_switches=1
+DEBUG: Allocated free frame 0
+DEBUG: Cost after FIN (proc 0, vpage 0) = 1630
+DEBUG: FIN (first access) for proc 0, vpage 0
+DEBUG: Cost after MAP (proc 0, vpage 0) = 1930
+DEBUG: Mapped frame 0 to proc 0, vpage 0, modified=1, pagedout=1, file_mapped=1
+DEBUG: Cost after instruction (r 0) = 1931
+DEBUG: Processed r 0, cost=1931
+DEBUG: Allocated free frame 1
+DEBUG: Cost after ZERO (proc 0, vpage 20) = 2071
+DEBUG: ZERO for proc 0, vpage 20
+DEBUG: Cost after MAP (proc 0, vpage 20) = 2371
+DEBUG: Cost after SEGPROT (proc 0, vpage 20) = 2711
+DEBUG: SEGPROT for proc 0, vpage 20, pagedout=1
+DEBUG: Mapped frame 1 to proc 0, vpage 20, modified=0, pagedout=1, file_mapped=0
+DEBUG: Cost after instruction (w 20) = 2712
+DEBUG: Processed w 20, cost=2712
+DEBUG: Cost after context switch (c 1) = 2842
+DEBUG: Context switch to proc 1, ctx_switches=2
+DEBUG: Allocated free frame 2
+DEBUG: Cost after ZERO (proc 1, vpage 15) = 2982
+DEBUG: ZERO for proc 1, vpage 15
+DEBUG: Cost after MAP (proc 1, vpage 15) = 3282
+DEBUG: Mapped frame 2 to proc 1, vpage 15, modified=1, pagedout=1, file_mapped=0
+DEBUG: Cost after instruction (r 15) = 3283
+DEBUG: Processed r 15, cost=3283
+DEBUG: Allocated free frame 3
+DEBUG: Cost after ZERO (proc 1, vpage 10) = 3423
+DEBUG: ZERO for proc 1, vpage 10
+DEBUG: Cost after MAP (proc 1, vpage 10) = 3723
+DEBUG: Mapped frame 3 to proc 1, vpage 10, modified=1, pagedout=1, file_mapped=0
+DEBUG: Cost after instruction (w 10) = 3724
+DEBUG: Processed w 10, cost=3724
+DEBUG: Cost after context switch (c 2) = 3854
+DEBUG: Context switch to proc 2, ctx_switches=3
+DEBUG: Allocated free frame 4
+DEBUG: Cost after FIN (proc 2, vpage 5) = 5354
+DEBUG: FIN (first access) for proc 2, vpage 5
+DEBUG: Cost after MAP (proc 2, vpage 5) = 5654
+DEBUG: Mapped frame 4 to proc 2, vpage 5, modified=1, pagedout=1, file_mapped=1
+DEBUG: Cost after instruction (r 5) = 5655
+DEBUG: Processed r 5, cost=5655
+DEBUG: Cost after context switch (c 0) = 5785
+DEBUG: Context switch to proc 0, ctx_switches=4
+DEBUG: Set modified=1 for proc 0, vpage 0 (write)
+DEBUG: Set modified=1 for proc 0, vpage 0 (file_mapped)
+DEBUG: Cost after instruction (w 0) = 5786
+DEBUG: Processed w 0, cost=5786
+DEBUG: Cost after UNMAP (proc 1, vpage 10) = 6186
+DEBUG: Process exit, unmapping proc 1, vpage 10, frame 3, modified=1, file_mapped=0
+DEBUG: Freed frame 3 during process exit
+DEBUG: Cost after UNMAP (proc 1, vpage 15) = 6586
+DEBUG: Process exit, unmapping proc 1, vpage 15, frame 2, modified=1, file_mapped=0
+DEBUG: Freed frame 2 during process exit
+DEBUG: Cost after process exit (e 1) = 6986
+DEBUG: Process 1 exited, process_exits=1
+DEBUG: Cost after context switch (c 2) = 7116
+DEBUG: Context switch to proc 2, ctx_switches=5
+DEBUG: Allocated free frame 5
+DEBUG: Cost after FIN (proc 2, vpage 10) = 8616
+DEBUG: FIN (first access) for proc 2, vpage 10
+DEBUG: Cost after MAP (proc 2, vpage 10) = 8916
+DEBUG: Mapped frame 5 to proc 2, vpage 10, modified=1, pagedout=1, file_mapped=1
+DEBUG: Cost after instruction (r 10) = 8917
+DEBUG: Processed r 10, cost=8917
+DEBUG: Cost after UNMAP (proc 2, vpage 5) = 9317
+DEBUG: Process exit, unmapping proc 2, vpage 5, frame 4, modified=1, file_mapped=1
+DEBUG: Cost after FOUT (proc 2, vpage 5) = 10840
+DEBUG: FOUT for proc 2, vpage 5
+DEBUG: Freed frame 4 during process exit
+DEBUG: Cost after UNMAP (proc 2, vpage 10) = 11240
+DEBUG: Process exit, unmapping proc 2, vpage 10, frame 5, modified=1, file_mapped=1
+DEBUG: Cost after FOUT (proc 2, vpage 10) = 12763
+DEBUG: FOUT for proc 2, vpage 10
+DEBUG: Freed frame 5 during process exit
+DEBUG: Cost after process exit (e 2) = 13163
+DEBUG: Process 2 exited, process_exits=2
+DEBUG: Current process set to nullptr
+DEBUG: No context switch, staying on proc 0
+DEBUG: Allocated free frame 6
+DEBUG: Cost after ZERO (proc 0, vpage 25) = 13303
+DEBUG: ZERO for proc 0, vpage 25
+DEBUG: Cost after MAP (proc 0, vpage 25) = 13603
+DEBUG: Mapped frame 6 to proc 0, vpage 25, modified=1, pagedout=1, file_mapped=0
+DEBUG: Cost after instruction (r 25) = 13604
+DEBUG: Processed r 25, cost=13604
+DEBUG: Proc 0 stats: U=0 M=3 I=0 O=0 FI=1 FO=0 Z=2 SV=0 SP=1
+DEBUG: Proc 1 stats: U=2 M=2 I=0 O=0 FI=0 FO=0 Z=2 SV=0 SP=0
+DEBUG: Proc 2 stats: U=2 M=2 I=0 O=0 FI=2 FO=2 Z=0 SV=0 SP=0
+DEBUG: TOTALCOST inst=16 ctx_switches=5 exits=2 cost=13604
